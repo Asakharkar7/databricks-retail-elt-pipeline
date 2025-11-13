@@ -1,2 +1,11 @@
-# databricks-retail-elt-pipeline
-End-to-end Databricks ELT pipeline using PySpark and Delta Lake.  Implements Bronze → Silver → Gold architecture, performs data cleaning and  business aggregations, and includes a full retail analytics dashboard  (Total Revenue, Orders, Customer Retention, Monthly Trends, Top Customers).
+🛍️ Retail Analytics Pipeline — Databricks PySpark (Bronze → Silver → Gold)
+
+An end-to-end ELT pipeline built in Databricks using PySpark and the Delta Lake Bronze/Silver/Gold architecture.
+This project ingests raw retail data, cleans and transforms it, produces business-ready analytics tables, and visualizes insights using Databricks Notebook Dashboards.
+
+🚀 Architecture
+
+<img width="1536" height="1024" alt="Architecture" src="https://github.com/user-attachments/assets/7fe8c940-7de1-4a77-93fc-d2da2ce27047" />
+
+
+
