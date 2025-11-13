@@ -1,69 +1,69 @@
-🛍️ Retail Analytics Pipeline — Databricks PySpark (Bronze → Silver → Gold)
+#🛍️ Retail Analytics Pipeline — Databricks PySpark (Bronze → Silver → Gold)
 
 An end-to-end ELT pipeline built in Databricks using PySpark and the Delta Lake Bronze/Silver/Gold architecture.
 This project ingests raw retail data, cleans and transforms it, produces business-ready analytics tables, and visualizes insights using Databricks Notebook Dashboards.
 
-🚀 Architecture
+##🚀 Architecture
 
 <img width="1536" height="1024" alt="Architecture" src="https://github.com/user-attachments/assets/7fe8c940-7de1-4a77-93fc-d2da2ce27047" />
 
 
 
 
-🧱 Pipeline Overview
+# 🧱 Pipeline Overview
 
-Bronze Layer — Raw Ingestion
+## Bronze Layer — Raw Ingestion
 
-Loaded CSV file into Databricks
+1. Loaded CSV file into Databricks
 
-Enforced schema & cleaned minimal fields
+2. Enforced schema & cleaned minimal fields
 
-Stored as Bronze Delta Table
+3. Stored as Bronze Delta Table
 
-Silver Layer — Data Cleaning
+## Silver Layer — Data Cleaning
 
-Performed full data fixes:
+1. Performed full data fixes:
 
-Handled mixed timestamp formats
+2. Handled mixed timestamp formats
 
-Removed negative quantities / prices
+3. Removed negative quantities / prices
 
-Standardized CustomerID
+4. Standardized CustomerID
 
-Added revenue column
+5. Added revenue column
 
-Removed corrupted rows
+6. Removed corrupted rows
 
-Ensured clean timestamp conversion
+7. Ensured clean timestamp conversion
 
-Gold Layer — Business Metrics
+## Gold Layer — Business Metrics
 
-Created analytical Delta Tables:
+1. Created analytical Delta Tables:
 
-Revenue by Country
+2. Revenue by Country
 
-Monthly Revenue Trend
+3. Monthly Revenue Trend
 
-Total Orders
+4. Total Orders
 
-Unique Customers
+5. Unique Customers
 
-Returning Customer %
+6. Returning Customer %
 
-Top 10 Customers
+7. Top 10 Customers
 
-Average Order Value
+8. Average Order Value
 
-📊 Dashboard (Notebook Dashboard View)
+# 📊 Dashboard (Notebook Dashboard View)
 
-Since Databricks notebook dashboards cannot be exported, screenshots are provided
+## Since Databricks notebook dashboards cannot be exported, screenshots are provided
 
 <img width="1277" height="757" alt="Dashboard Part 1" src="https://github.com/user-attachments/assets/29849e6e-d404-4905-b538-27516b1d6c3a" />
 
 
 <img width="1022" height="501" alt="Dashboard Part 2" src="https://github.com/user-attachments/assets/5c8cd1ec-f01f-452c-b075-c9752a34f636" />
 
-Included KPIs visualized:
+## Included KPIs visualized:
 
 Total Orders
 
@@ -82,21 +82,21 @@ Monthly Revenue
 Top 10 Customers
 
 
-🛠️ Technologies Used
+#🛠️ Technologies Used
 
-Databricks (Free Community Edition)
+1. Databricks (Free Community Edition)
 
-PySpark
+2. PySpark
 
-Delta Lake
+3. Delta Lake
 
-Notebook Dashboard UI
+4. Notebook Dashboard UI
 
-Bronze/Silver/Gold Architecture
+5. Bronze/Silver/Gold Architecture
 
-ETL/ELT Pipeline Design
+6. ETL/ELT Pipeline Design
 
-Data Visualization
+7. Data Visualization
 
 📥 Input Data
 
@@ -123,13 +123,13 @@ df_silver = df_bronze.withColumn(
 
 
 
-🏁 Future Enhancements
+# 🏁 Future Enhancements
 
-Automate ingestion with Auto Loader
+1. Automate ingestion with Auto Loader
 
-Add Databricks Jobs for scheduling
+2. Add Databricks Jobs for scheduling
 
-Implement unit tests with pytest
+3. Implement unit tests with pytest
 
 Add CDC support for incremental updates
 
